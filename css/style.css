@@ -14,6 +14,7 @@
   --site-gray: #777;
   --site-bg-gray: #f0f0f0;
   --bg-dark-gray: #040e27;
+  --color: #051337;
 }
 @font-face {
   font-family: "Rubik";
@@ -276,6 +277,7 @@ button {
   text-align: center;
   font-family: "Rubik";
   padding: 1rem 0;
+  margin: 1.2rem 0;
 }
 .popular-destination-content h1 {
   margin: 0.7rem 0;
@@ -288,7 +290,7 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2.5rem;
-  /* padding: 1rem 10rem; */
+  padding: 1rem 2.5rem;
 }
 .popular-destination-card {
   position: relative;
@@ -299,6 +301,26 @@ button {
   height: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
+}
+.popular-destination-card-info {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 1rem;
+}
+.popular-destination-card-info h2 {
+  color: var(--site-white);
+  margin: 0 1rem;
+  font-family: "Rubik";
+}
+.popular-destination-card-info a {
+  background-color: var(--secondary);
+  padding: 0.1rem 1rem;
+  border-radius: 1rem;
+  color: var(--site-white);
 }
 /* media  query*/
 
@@ -345,5 +367,14 @@ button {
   }
   .menuclose:hover {
     color: var(--secondary);
+  }
+}
+
+@media (max-width: 490px) {
+  .popular-destination-cards {
+    padding: 0.5rem;
+  }
+  .popular-destination-card {
+    max-width: 100%;
   }
 }
