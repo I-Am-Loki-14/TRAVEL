@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/fontawesome-free-7.3.0-web"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TRAVEL"
+	}
+}

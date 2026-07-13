@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome css  -->
+    <link rel="stylesheet" href="./webfonts/fontawesome-free-7/css/all.min.css">
+</head>
+
+<body>
+    <header>
+
+        <button id="menu-open" class="menu-open"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+            <!-- <a href="###"><img src="./image/logo.png" alt=""></a> -->
+            <a href="#home"><i class="fa-solid fa-car-side" style="font-size: 1.7rem;"></i></a>
+        </div>
+        <nav>
+            <ul class="navlinks" id="navlinks">
+                <li><button class="menuclose" id="menuclose"><i class="fa-solid fa-xmark"></i></button></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#destinaions">Destintions</a></li>
+                <li><a href="#pages">Pages</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="call" id="call">
+            <a href="tel:+959795503188"><i class="fa-solid fa-phone"></i>&ensp;09795503188</a>
+        </div>
+        <div>
+            <ul class="social">
+                <li><a href="###"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="###"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="###"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="###"><i class="fa-brands fa-behance"></i></a></li>
+            </ul>
+        </div>
+        <div class="search" id="search">
+            <a href="###"><i class="fa-solid fa-search"></i></a>
+        </div>
+        <!-- search box  -->
+        <div class="search-container" id="search-container">
+            <input type="text" placeholder="Search ">
+            <button class="closee" id="closee"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </header>
+    <!-- slider section  -->
+    <section>
+        <div class="slider">
+            <div class="slider-item active">
+                <img src="./image/Screenshot 2024-06-14 011616.png" alt="">
+                <div class="slider-item-content">
+                    <h1>Indonesia</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consectetur.</p>
+                    <a href="###" class="btn">Explore now</a>
+                </div>
+            </div>
+
+            <div class="slider-item ">
+                <img src="./image/bora-bora-3023437_1920.jpg" alt="">
+                <div class="slider-item-content">
+                    <h1>Switzerland</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consectetur.</p>
+                    <a href="###" class="btn">Explore now</a>
+                </div>
+            </div>
+            <div class="slider-item ">
+                <img src="./image/pexels-bagus41-1440476.jpg" alt="">
+                <div class="slider-item-content">
+                    <h1>Japan</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consectetur.</p>
+                    <a href="###" class="btn">Explore now</a>
+                </div>
+            </div>
+            <!-- slider button  -->
+            <div class="slider-btn">
+                <button onclick="prev()"><i class="fa-solid fa-angle-left"></i></button>
+                <button onclick="next()"><i class="fa-solid fa-angle-right"></i></button>
+
+            </div>
+        </div>
+    </section>
+    <!-- search route  -->
+    <section>
+        <div class="route-container">
+            <form action="###">
+                <div>
+                    <h2>Where you want to go?</h2>
+                </div>
+                <div><input type="text" placeholder="Where to go?" autofocus required></div>
+                <div><input type="datetime-local" name="date" id="date"></div>
+                <div><select name="select" id="select">
+                        Travel Type
+                        <option value="">Travel type</option>
+                        <option value="">Some option</option>
+                        <option value="">Another option</option>
+                    </select></div>
+                <div><button class="search">Search</button></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Popular destination  -->
+    <section>
+        <div class="popular-destination-container">
+            <div class="popular-destination-content">
+                <h1>Popular Destination</h1>
+                <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella
+                    wolf moon beard
+                    words.</p>
+            </div>
+            <div class="popular-destination-cards">
+                <div class="popular-destination-card">
+                    <img src="./image/pexels-bagus41-1440476.jpg" alt="">
+                </div>
+                <div class="popular-destination-card">
+                    <img src="./image/pexels-bagus41-1440476.jpg" alt="">
+                </div>
+                <div class="popular-destination-card">
+                    <img src="./image/pexels-bagus41-1440476.jpg" alt="">
+                </div>
+                <div class="popular-destination-card">
+                    <img src="./image/pexels-bagus41-1440476.jpg" alt="">
+                </div>
+                <div class="popular-destination-card">
+                    <img src="./image/pexels-bagus41-1440476.jpg" alt="">
+                </div>
+                <div class="popular-destination-card">
+                    <img src="./image/pexels-bagus41-1440476.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
