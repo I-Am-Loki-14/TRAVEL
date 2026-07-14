@@ -19,9 +19,10 @@ navmenu.onclick = (e) =>{
 //window scroll 
 window.addEventListener('scroll', ()=> {
     if (window.scrollY > 70) {
-        header.style.backdropFilter="blur(3px)"
+        header.style.backgroundColor="rgb(248, 231, 231)"
         header.style.boxShadow="1px 1px 5px black"
         header.style.transition=" all 0.3s"
+        
     } else {
         header.style.backgroundColor="transparent";
         header.style.boxShadow= "";
@@ -32,7 +33,7 @@ window.addEventListener('scroll', ()=> {
 // search 
 
 search.addEventListener('click',(e)=>{
-    console.log("Clicked");
+    console.log("Open");
     e.preventDefault();
     searchContainer.classList.add('show')
 })
