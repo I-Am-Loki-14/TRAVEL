@@ -81,6 +81,7 @@ header a {
   padding: 0.9rem;
   display: block;
   transition: all 0.3s;
+  color: var(--primary-color);
 }
 header .logo a {
   height: 100%;
@@ -295,6 +296,8 @@ button {
 .popular-destination-card {
   position: relative;
   /* border: 1px solid blue; */
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .popular-destination-card img {
   width: 100%;
@@ -315,12 +318,20 @@ button {
   color: var(--site-white);
   margin: 0 1rem;
   font-family: "Rubik";
+  transition: all 0.3s;
 }
 .popular-destination-card-info a {
   background-color: var(--secondary);
   padding: 0.1rem 1rem;
   border-radius: 1rem;
   color: var(--site-white);
+}
+.popular-destination-card:hover {
+  transform: translateY(-15px);
+}
+.popular-destination-card:hover .popular-destination-card-info h2,
+a {
+  color: var(--primary-color);
 }
 /* media  query*/
 
