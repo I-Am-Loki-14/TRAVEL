@@ -70,14 +70,14 @@ setInterval(next ,3000)
 const ReviewCards = document.querySelectorAll('.review-container-card');
  let CurrentIndex = 0
 
- function next() {
+ function nexxt() {
     CurrentIndex = (CurrentIndex + 1) % ReviewCards.length
-    ReviewCards.forEach(ReviewCard => ReviewCard.classList.remove('active'))
-    ReviewCards[CurrentIndex].classList.add('active')
+    ReviewCards.forEach(ReviewCard => ReviewCard.classList.remove('activee'))
+    ReviewCards[CurrentIndex].classList.add('activee')
  }
- function prev() {
+ function preev() {
     CurrentIndex = (CurrentIndex - 1 + ReviewCards.length) % ReviewCards.length
-    ReviewCards.forEach(ReviewCard => ReviewCard.classList.remove('active'))
-    ReviewCards[CurrentIndex].classList.add('active')
+    ReviewCards.forEach(ReviewCard => ReviewCard.classList.remove('activee'))
+    ReviewCards[CurrentIndex].classList.add('activee')
  }
- setInterval(next,3000)
+ setInterval(nexxt,3000)
