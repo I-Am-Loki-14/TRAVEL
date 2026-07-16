@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <!-- floating up arrow  -->
+
+    <a href="#nav-title" class="float-arrow" id="float-arrow"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+
     <!-- search box  -->
     <div class="search-container" id="search-container">
         <div class="search-container_container">
@@ -29,7 +33,7 @@
 
             <a href="#home"><i class="fa-solid fa-car-side" style="font-size: 1.7rem;"></i></a>
         </div>
-        <nav>
+        <nav id="nav-title">
             <ul class="navlinks" id="navlinks">
                 <li><button class="menuclose" id="menuclose"><i class="fa-solid fa-xmark"></i></button></li>
                 <li><a href="#home">Home</a></li>
@@ -193,7 +197,7 @@
                 moon beard
                 words.</p>
         </div>
-        <div class="popular-place-container">
+        <div class="popular-place-container" id="popular-place-container">
             <div class="popular-place-container-card">
                 <div>
                     <img src="./image/pexels-bagus41-1440476.jpg" alt="">
@@ -289,6 +293,54 @@
                         <span>🕰️&ensp;5 Days</span>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="more-places">
+            <button><a href="#popular-place-container">More Places</a></button>
+        </div>
+    </section>
+    <!-- guide section  -->
+    <section class="guide" id="guide">
+        <div class="guide-container" id="guide-container">
+            <div class="guide-container-card">
+                <img src="./image/1.svg" alt="">
+                <h3>Comfortable Journey</h3>
+                <p>A wonderful serenity has taken to the possession of my entire soul.</p>
+            </div>
+            <div class="guide-container-card">
+                <img src="./image/2.svg" alt="">
+                <h3>Luxuries Hotel</h3>
+                <p>A wonderful serenity has taken to the possession of my entire soul.</p>
+            </div>
+            <div class="guide-container-card">
+                <img src="./image/3.svg" alt="">
+                <h3>Travel Guide</h3>
+                <p>A wonderful serenity has taken to the possession of my entire soul.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- review people section  -->
+    <section class="review" id="review">
+        <div class="review-container" id="review-container">
+            <div class="review-container-card active">
+                <img src="./image/author.webp" alt="">
+                <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help
+                    alleviate human suffering.</p>
+                <span>- Tom Hardy</span>
+            </div>
+            <div class="review-container-card">
+                <img src="./image/my-photo.jpg" alt="">
+
+                <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes.</p>
+                <span>- Tom Cruise</span>
+            </div>
+            <div class="review-container-card">
+                <img src="./image/my-photo.jpg" alt="">
+
+                <p>"Working in conjunction we have supported programmes to help
+                    alleviate human suffering.</p>
+                <span>- Tom Holland</span>
             </div>
         </div>
     </section>

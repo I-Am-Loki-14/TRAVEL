@@ -28,6 +28,28 @@
 body {
   position: relative;
 }
+/* floating arrow  */
+.float-arrow {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  opacity: 1;
+  visibility: visible;
+}
+.float-arrow i {
+  color: var(--site-white);
+  font-size: 20px;
+}
+
 /* header  */
 .search-container {
   /* background-color: var(--site-gray); */
@@ -283,9 +305,10 @@ button {
   padding: 1rem 0.5rem;
   font-family: "Rubik";
   background-color: transparent;
-  color: var(--site-white);
   font-size: 1.1rem;
+  color: var(--site-white);
 }
+
 .route-container form input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
@@ -294,6 +317,18 @@ button {
 }
 .route-container form select option {
   background-color: var(--bg-dark-gray);
+}
+.route-container form input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+.route-container form input[type="date"]:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+.route-container form select:focus {
+  border-color: var(--primary-color);
+  outline: none;
 }
 .route-container form button {
   background-color: var(--primary-color);
@@ -494,6 +529,90 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+.more-places {
+  margin: 1.5rem 0;
+  padding: 1.5rem 0;
+}
+.more-places button {
+  width: 170px;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  border: none;
+  transition: all 0.3s;
+}
+.more-places button a {
+  color: var(--site-white);
+}
+.more-places button:hover {
+  background-color: var(--secondary);
+}
+
+/* Guide section  */
+.guide {
+  padding: 1rem 1.5rem;
+}
+.guide-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 0.5rem;
+}
+.guide-container .guide-container-card {
+  text-align: center;
+  /* border: 1px solid var(--color); */
+  padding: 1rem;
+}
+.guide-container .guide-container-card h3 {
+  font-family: "Rubik";
+  margin: 1rem 0;
+}
+.guide-container .guide-container-card p {
+  font-family: "Rubik";
+  margin: 1rem 0;
+  color: var(--site-gray);
+}
+
+/* review section  */
+.review .review-container {
+  position: relative;
+}
+.review-container .review-container-card {
+  text-align: center;
+  padding: 1.2rem;
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 1s;
+}
+.review-container .review-container-card.active {
+  opacity: 1 !important;
+  position: relative;
+}
+.review-container .review-container-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.review-container-card h3 {
+  font-family: "Rubik";
+  margin: 1.5rem 0;
+  color: var(--color);
+}
+.review-container-card p {
+  font-family: "Rubik";
+  margin: 1.5rem 0;
+  color: var(--site-gray);
+}
+.review-container-card span {
+  font-family: "Rubik";
+  margin: 1.5rem 0;
+  color: var(--site-gray);
+  font-size: 1.2rem;
+}
+
 /* media  query*/
 
 @media (max-width: 1080px) {
@@ -551,5 +670,8 @@ button {
   }
   .popular-place-container {
     padding: 0.2rem;
+  }
+  .guide {
+    padding: 0rem;
   }
 }

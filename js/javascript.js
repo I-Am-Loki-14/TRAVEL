@@ -5,6 +5,8 @@ const header = document.querySelector('header')
 const search = document.getElementById('search')
 const searchContainer=document.getElementById('search-container')
 const closebtnn = document.getElementById('closee')
+const FloatArrow = document.getElementById('float-arrow')
+
 
 menuopen.onclick = () =>{
     navmenu.classList.add('active');
@@ -18,7 +20,8 @@ navmenu.onclick = (e) =>{
 
 //window scroll 
 window.addEventListener('scroll', ()=> {
-    if (window.scrollY > 70) {
+   
+    if (window.scrollY > 100) {
         header.style.backgroundColor="rgb(248, 231, 231)"
         header.style.boxShadow="1px 1px 5px black"
         header.style.transition=" all 0.3s"
@@ -62,3 +65,19 @@ function prev() {
     sliders[index].classList.add('active')
 }
 setInterval(next ,3000)
+
+// review cards 
+const ReviewCards = document.querySelectorAll('.review-container-card');
+ let CurrentIndex = 0
+
+ function next() {
+    CurrentIndex = (CurrentIndex + 1) % ReviewCards.length
+    ReviewCards.forEach(ReviewCard => ReviewCard.classList.remove('active'))
+    ReviewCards[CurrentIndex].classList.add('active')
+ }
+ function prev() {
+    CurrentIndex = (CurrentIndex - 1 + ReviewCards.length) % ReviewCards.length
+    ReviewCards.forEach(ReviewCard => ReviewCard.classList.remove('active'))
+    ReviewCards[CurrentIndex].classList.add('active')
+ }
+ setInterval(next,3000)
