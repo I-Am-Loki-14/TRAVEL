@@ -348,6 +348,7 @@ button {
 }
 .popular-destination-content h1 {
   margin: 0.7rem 0;
+  color: var(--color);
 }
 .popular-destination-content p {
   color: var(--site-gray);
@@ -459,6 +460,7 @@ button {
   text-align: center;
   margin: 1rem 0;
   padding: 1rem 0;
+  color: var(--color);
 }
 .popular-place .popular-place-title h1 {
   font-family: "Rubik";
@@ -479,7 +481,7 @@ button {
 .popular-place-container-card {
   position: relative;
   /* border: 1px solid var(--site-gray); */
-  background-color: var(--site-white);
+  background-color: var(--site-bg-gray);
   border-radius: 0.5rem;
   overflow: hidden;
   cursor: pointer;
@@ -612,7 +614,101 @@ button {
   color: var(--site-gray);
   font-size: 1.2rem;
 }
+/* Recent Trip Css  */
+.recent-title {
+  text-align: center;
+  color: var(--color);
+  font-family: "Rubik";
+  margin: 1.5rem 0;
+}
+.recent-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+  padding: 0 1.5rem;
+}
+.recent-container .recent-card {
+  padding: 1rem;
+}
+.recent-container .recent-card img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.recent-container .recent-card p {
+  color: var(--site-gray);
+  margin: 1rem 0;
+  font-family: "Rubik";
+}
+.recent-container .recent-card a {
+  font-family: "Rubik";
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+.recent-container .recent-card a:hover {
+  color: var(--primary-color);
+}
 
+/* footer section  */
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--bg-dark-gray);
+}
+.footer-container_card {
+  padding: 0.5rem;
+}
+.footer-container h4 {
+  color: var(--site-white);
+  font-family: "Rubik";
+  margin: 1rem 0;
+}
+.footer-container_card p {
+  color: var(--site-white);
+  font-family: "Rubik";
+  margin: 0.5rem 0;
+  transition: all 0.3s;
+}
+.footer-container_card a {
+  display: block;
+  color: var(--site-white);
+  transition: all 0.3s;
+}
+.footer-container_card a:hover {
+  color: var(--primary-color);
+}
+.footer-container ul li a {
+  color: var(--site-gray);
+  transition: all 0.3s;
+}
+.footer-container ul li a:hover {
+  color: var(--primary-color);
+}
+.footer-container .desitnation-links {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3.5rem;
+}
+.footer-container .social-place {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+}
+.social-place img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+.social-place a {
+  transition: all 0.3s;
+}
+.social-place a:hover {
+  scale: 1.1;
+}
 /* media  query*/
 
 @media (max-width: 1080px) {
@@ -673,5 +769,11 @@ button {
   }
   .guide {
     padding: 0rem;
+  }
+  .recent-container {
+    padding: 0 0.5rem;
+  }
+  .footer-container_card {
+    padding: 0;
   }
 }

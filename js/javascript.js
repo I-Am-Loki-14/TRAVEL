@@ -22,7 +22,7 @@ navmenu.onclick = (e) =>{
 window.addEventListener('scroll', ()=> {
    
     if (window.scrollY > 100) {
-        header.style.backgroundColor="rgb(248, 231, 231)"
+        header.style.backgroundColor="#f0f0f0"
         header.style.boxShadow="1px 1px 5px black"
         header.style.transition=" all 0.3s"
         
@@ -56,8 +56,6 @@ function next() {
     index = (index + 1) % sliders.length
     sliders.forEach(slider => slider.classList.remove('active'));
     sliders[index].classList.add('active')
-  
-    
 }
 function prev() {
     index = (index - 1 + sliders.length) % sliders.length
