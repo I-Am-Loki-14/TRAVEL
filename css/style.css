@@ -229,7 +229,13 @@ header .call a:hover {
 }
 .slider .slider-item .slider-item-content h1 {
   font-family: "Nothing";
-  font-size: 5rem;
+  font-size: 4.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.slider .slider-item .slider-item-content p {
+  color: var(--site-white);
+  font-family: "Rubik";
 }
 .slider .slider-item .slider-item-content .btn {
   background-color: var(--secondary);
