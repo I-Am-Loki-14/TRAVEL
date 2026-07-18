@@ -21,7 +21,7 @@ navmenu.onclick = (e) =>{
 //window scroll 
 window.addEventListener('scroll', ()=> {
    
-    if (window.scrollY > 100) {
+    if (window.scrollY > 50) {
         header.style.backgroundColor="#f0f0f0"
         header.style.boxShadow="1px 1px 5px black"
         header.style.transition=" all 0.3s"
