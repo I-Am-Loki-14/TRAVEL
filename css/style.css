@@ -381,7 +381,7 @@ button {
 }
 .popular-destination-card-info {
   position: absolute;
-  left: 5%;
+  left: 1%;
   bottom: 5%;
   display: flex;
   justify-content: start;
@@ -573,6 +573,7 @@ button {
 .guide-container .guide-container-card h3 {
   font-family: "Rubik";
   margin: 1rem 0;
+  color: var(--color);
 }
 .guide-container .guide-container-card p {
   font-family: "Rubik";
@@ -693,6 +694,7 @@ footer {
   display: block;
   color: var(--site-white);
   transition: all 0.3s;
+  font-family: "Rubik";
 }
 .footer-container_card a:hover {
   color: var(--primary-color);
