@@ -350,6 +350,10 @@ button {
 }
 
 /* Popular destination css */
+.popular-destination-container {
+  width: 95%;
+  margin: 0 auto;
+}
 .popular-destination-content {
   text-align: center;
   font-family: "Rubik";
@@ -466,6 +470,11 @@ button {
 }
 
 /* Popular place section  */
+.popular-place {
+  width: 95%;
+  /* background-color: #1ec6b6; */
+  margin: 0 auto;
+}
 .popular-place .popular-place-title {
   text-align: center;
   margin: 1rem 0;
@@ -484,8 +493,8 @@ button {
 
 .popular-place-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 1.7em;
   padding: 1rem 2rem;
 }
 .popular-place-container-card {
@@ -540,6 +549,10 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.popular-place-container-card_review span {
+  font-family: "Rubik";
+  color: var(--site-black);
 }
 .more-places {
   margin: 1.5rem 0;
@@ -658,6 +671,15 @@ button {
 .recent-container .recent-card a:hover {
   color: var(--primary-color);
 }
+/* video  */
+.video-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.video-container .video-card {
+  width: 100%;
+}
 
 /* footer section  */
 footer {
@@ -738,6 +760,10 @@ footer .copyright {
   color: var(--site-gray);
   font-family: "Rubik";
   padding: 1.5rem 0;
+  font-size: 1rem;
+}
+footer .copyright span {
+  color: var(--secondary);
 }
 /* media  query*/
 

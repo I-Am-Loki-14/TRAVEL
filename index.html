@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- font awesome css  -->
     <link rel="stylesheet" href="./webfonts/fontawesome-free-7/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+    <link rel="stylesheet" href="path/to/plyr.css" />
 </head>
 
 <body>
@@ -359,9 +361,15 @@
             </div>
         </div>
     </section>
-
+    <!-- video section  -->
+    <section class="video-container">
+        <div class="video-card">
+            <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+                <source src="./image/walking.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </section>
     <!-- Recent Trip  -->
-
     <section class="recent-trip" id="recent-trip">
         <h1 class="recent-title">Recent Trip</h1>
         <div class="recent-container">
@@ -444,8 +452,13 @@
             </div>
         </div>
 
-        <p class="copyright">Copyright ©2032 All rights reserved | This template is made with by Min Naing Oo</p>
+        <p class="copyright">Copyright ©2032 All rights reserved | This template is made with by <span>Min Naing
+                Oo</span></p>
     </footer>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.js"></script>
+
+
     <script src="js/javascript.js"></script>
 </body>
 

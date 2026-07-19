@@ -79,3 +79,5 @@ const ReviewCards = document.querySelectorAll('.review-container-card');
     ReviewCards[CurrentIndex].classList.add('activee')
  }
  setInterval(nexxt,3000)
+
+ const player = new Plyr('#player');
