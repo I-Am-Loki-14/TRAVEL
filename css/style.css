@@ -680,6 +680,20 @@ button {
 .video-container .video-card {
   width: 100%;
 }
+/* 💡 Bootstrap က Plyr ရဲ့ Control Icon တွေကို အတင်းဆွဲမဆန့်အောင် ကာကွယ်တာ */
+.plyr__control--overlaid {
+  display: inline-flex !important; /* 👈 Layout ပုံစံကို inline-flex ပြောင်းလိုက်မယ် */
+  align-items: center !important;
+  justify-content: center !important;
+  height: auto !important; /* 👈 အမြင့်ကြီး ရှည်မထွက်အောင် ပိတ်တာ */
+  width: auto !important;
+}
+
+/* Play Icon (SVG) ကို မူလ ဝိုင်းဝိုင်းစက်စက် size ပြန်ဖြစ်အောင် ထိန်းပေးတာ */
+.plyr__control--overlaid svg {
+  width: 40px !important;
+  height: 40px !important;
+}
 
 /* footer section  */
 footer {
