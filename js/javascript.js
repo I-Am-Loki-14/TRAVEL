@@ -81,3 +81,16 @@ const ReviewCards = document.querySelectorAll('.review-container-card');
  setInterval(nexxt,3000)
 
  const player = new Plyr('#player');
+
+let slider = tns({
+  container: '.my-slider', 
+  items: 1,         
+  slideBy: 'page',
+  autoplay: true, 
+  autoplayTimeout:5000,  
+  speed:500,       // အော်တို ရွေ့စေချင်ရင် true
+  autoplayButtonOutput: false, // autoplay ခလုတ်ကြီး ပေါ်မလာအောင် ပိတ်တာ
+  controls: false,          // Next / Prev ခလုတ်တွေ ပြမလဲ
+  mouseDrag:true,  
+  navContainer:false,              // အောက်က အစက်ကလေးတွေ (dots) ပြမလဲ
+});

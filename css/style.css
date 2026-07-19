@@ -673,28 +673,61 @@ button {
 }
 /* video  */
 .video-container {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
   padding: 1rem;
 }
-.video-container .video-card {
+.video-card_container {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem !important;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.video-card_container video {
   width: 100%;
 }
-/* 💡 Bootstrap က Plyr ရဲ့ Control Icon တွေကို အတင်းဆွဲမဆန့်အောင် ကာကွယ်တာ */
-.plyr__control--overlaid {
-  display: inline-flex !important; /* 👈 Layout ပုံစံကို inline-flex ပြောင်းလိုက်မယ် */
+💡 .plyr__control--overlaid {
+  display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  height: auto !important; /* 👈 အမြင့်ကြီး ရှည်မထွက်အောင် ပိတ်တာ */
+  height: auto !important;
   width: auto !important;
 }
 
-/* Play Icon (SVG) ကို မူလ ဝိုင်းဝိုင်းစက်စက် size ပြန်ဖြစ်အောင် ထိန်းပေးတာ */
 .plyr__control--overlaid svg {
   width: 40px !important;
   height: 40px !important;
 }
 
+/* Tiny slider  */
+
+.my-slider {
+  /* background-color: antiquewhite; */
+  width: 100%;
+  padding: 0 1rem;
+}
+.my-slider .slide-item {
+  padding: 1rem;
+  /* border: 1px solid red; */
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--site-gray);
+  font-family: "Rubik";
+}
+.my-slider .slide-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.my-slider .slide-item p {
+  margin: 1rem 0;
+}
+.tns-nav {
+  display: none;
+}
 /* footer section  */
 footer {
   background-color: var(--bg-dark-gray);
@@ -711,6 +744,10 @@ footer {
 }
 .footer-container_card {
   padding: 0.5rem;
+}
+.footer-info ul li,
+.desitnation-links ul li {
+  padding: 0.1rem 0;
 }
 .footer-container_card .socials {
   display: flex;
